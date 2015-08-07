@@ -26,7 +26,7 @@ if has("gui_running")
     hi Title      guifg=green     gui=BOLD
  
     hi Underlined guifg=#0087ff
-    hi Todo       guifg=blue      guibg=yellow
+    hi Todo       guifg=white     guibg=#af5f00  
     hi Folded     guifg=darkgray  guibg=black
     hi Visual     guifg=black     guibg=lightgray
     hi Search     guifg=black     guibg=yellow
@@ -55,7 +55,7 @@ elseif &term == "xterm-256color"
     hi Title      ctermfg=green                    cterm=BOLD
  
     hi Underlined ctermfg=33                                 
-    hi Todo       ctermfg=blue      ctermbg=yellow cterm=BOLD
+    hi Todo       ctermfg=white     ctermbg=130
     hi Folded     ctermfg=darkgray  ctermbg=black
     hi Visual     ctermfg=black     ctermbg=lightgray
     hi Search     ctermfg=black     ctermbg=yellow
@@ -83,7 +83,7 @@ else
     hi Title      ctermfg=green                    cterm=BOLD
  
     hi Underlined ctermfg=blue                                  
-    hi Todo       ctermfg=blue      ctermbg=yellow cterm=BOLD
+    hi Todo       ctermfg=white     ctermbg=brown
     hi Folded     ctermfg=darkgray  ctermbg=black
     hi Visual     ctermfg=black     ctermbg=lightgray
     hi Search     ctermfg=black     ctermbg=yellow
