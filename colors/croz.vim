@@ -29,6 +29,7 @@ if has("gui_running")
     hi Todo       guifg=blue      guibg=yellow
     hi Folded     guifg=darkgray  guibg=black
     hi Visual     guifg=black     guibg=lightgray
+    hi Search     guifg=black     guibg=yellow
 
     hi JavaCommentTitle guifg=darkgreen
     hi JavaDocTags      guifg=darkgreen gui=BOLD
@@ -57,6 +58,7 @@ elseif &term == "xterm-256color"
     hi Todo       ctermfg=blue      ctermbg=yellow cterm=BOLD
     hi Folded     ctermfg=darkgray  ctermbg=black
     hi Visual     ctermfg=black     ctermbg=lightgray
+    hi Search     ctermfg=black     ctermbg=yellow
 
     hi JavaCommentTitle ctermfg=darkgreen
     hi JavaDocTags      ctermfg=darkgreen cterm=BOLD
@@ -84,6 +86,7 @@ else
     hi Todo       ctermfg=blue      ctermbg=yellow cterm=BOLD
     hi Folded     ctermfg=darkgray  ctermbg=black
     hi Visual     ctermfg=black     ctermbg=lightgray
+    hi Search     ctermfg=black     ctermbg=yellow
 
     hi JavaCommentTitle ctermfg=darkgreen
     hi JavaDocTags      ctermfg=darkgreen cterm=BOLD
