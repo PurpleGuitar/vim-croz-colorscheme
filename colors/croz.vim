@@ -38,7 +38,9 @@ if has("gui_running")
     hi DiffDelete guibg=#5f0000
     hi DiffChange guibg=#00005f
     hi DiffText   guibg=#af5f00
- 
+
+    hi SpellBad   guibg=red        guifg=white
+
 elseif &term == "xterm-256color"
  
     " Colors from: http://vim.wikia.com/wiki/Xterm256_color_names_for_console_Vim
@@ -68,6 +70,7 @@ elseif &term == "xterm-256color"
     hi DiffChange ctermbg=17 
     hi DiffText   ctermbg=130 
 
+    hi SpellBad   ctermbg=red        ctermfg=white
  
 else
  
@@ -95,5 +98,7 @@ else
     hi DiffDelete ctermbg=darkred    ctermfg=white
     hi DiffChange ctermbg=darkblue   ctermfg=white
     hi DiffText   ctermbg=darkyellow ctermfg=white
+
+    hi SpellBad   ctermbg=red        ctermfg=white
 
 endif
