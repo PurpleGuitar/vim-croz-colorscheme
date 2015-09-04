@@ -40,6 +40,7 @@ if has("gui_running")
     hi  DiffText          guibg=#af5f00
 
     hi  SpellBad          guibg=#5f0000    guifg=white
+    hi  SpellCap          guibg=#000080    guifg=white
 
 elseif &term == "xterm-256color"
  
@@ -71,6 +72,7 @@ elseif &term == "xterm-256color"
     hi  DiffText          ctermbg=130
 
     hi  SpellBad          ctermbg=52         ctermfg=white
+    hi  SpellCap          ctermbg=darkblue   ctermfg=white
  
 else
  
@@ -100,5 +102,6 @@ else
     hi  DiffText          ctermbg=darkyellow    ctermfg=white
 
     hi  SpellBad          ctermbg=darkred       ctermfg=white
+    hi  SpellCap          ctermbg=darkblue      ctermfg=white
 
 endif
