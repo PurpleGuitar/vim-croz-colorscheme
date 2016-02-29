@@ -1,17 +1,17 @@
-hi clear
- 
+h clear
+
 if exists("syntax_on")
   syntax reset
 endif
- 
+
 let colors_name = "croz"
- 
+
 set background=dark
- 
+
 hi link SpellBad Error
 
 if has("gui_running")
- 
+
     " Colors from: http://vim.wikia.com/wiki/Xterm256_color_names_for_console_Vim
 
     hi  Normal            guifg=lightgray  guibg=black
@@ -42,10 +42,12 @@ if has("gui_running")
     hi  SpellBad          guibg=#5f0000    guifg=white
     hi  SpellCap          guibg=#000080    guifg=white
 
+    hi  ColorColumn       guibg=#1c1c1c
+
 elseif &term == "xterm-256color"
- 
+
     " Colors from: http://vim.wikia.com/wiki/Xterm256_color_names_for_console_Vim
- 
+
     hi  Normal            ctermfg=lightgray  ctermbg=black
     hi  Comment           ctermfg=darkgray
     hi  String            ctermfg=210
@@ -73,9 +75,11 @@ elseif &term == "xterm-256color"
 
     hi  SpellBad          ctermbg=52         ctermfg=white
     hi  SpellCap          ctermbg=darkblue   ctermfg=white
- 
+
+    hi  ColorColumn       ctermbg=234
+
 else
- 
+
     hi  Normal            ctermfg=lightgray     ctermbg=black
     hi  Comment           ctermfg=darkgray
     hi  String            ctermfg=lightred
@@ -103,5 +107,7 @@ else
 
     hi  SpellBad          ctermbg=darkred       ctermfg=white
     hi  SpellCap          ctermbg=darkblue      ctermfg=white
+
+    hi  ColorColumn       ctermbg=darkgray      ctermfg=white
 
 endif
