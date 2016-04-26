@@ -24,7 +24,7 @@ if has("gui_running")
     hi  Title             guifg=green      gui=BOLD
 
     hi  Todo              guifg=white      guibg=#af5f00
-    hi  Folded            guifg=darkgray   guibg=black
+    hi  Folded            guifg=#606060    guibg=black
     hi  Visual            guifg=black      guibg=lightgray
     hi  Search            guifg=black      guibg=yellow
 
