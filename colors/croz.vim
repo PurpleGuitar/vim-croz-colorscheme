@@ -37,7 +37,7 @@ if has("gui_running")
     hi  DiffText          guibg=#af5f00
 
     hi  ColorColumn       guibg=#1c1c1c
-    hi  Conceal           guifg=#606060   guibg=black
+    hi  Conceal           guifg=#808080   guibg=black
 
 elseif &term == "xterm-256color"
 
