@@ -8,14 +8,12 @@ let colors_name = "croz"
 
 set background=dark
 
-hi link SpellBad Error
-
 if has("gui_running")
 
     " Colors from: http://vim.wikia.com/wiki/Xterm256_color_names_for_console_Vim
 
-    hi  Normal            guifg=lightgray  guibg=black
-    hi  Comment           guifg=darkgray
+    hi  Normal            guifg=#dadada  guibg=black
+    hi  Comment           guifg=#606060
     hi  String            guifg=#ff8787
     hi  PreProc           guifg=#ff87ff
     hi  Statement         guifg=#00afff
@@ -25,7 +23,6 @@ if has("gui_running")
     hi  Type              guifg=yellow
     hi  Title             guifg=green      gui=BOLD
 
-    hi  Underlined        guifg=#0087ff
     hi  Todo              guifg=white      guibg=#af5f00
     hi  Folded            guifg=darkgray   guibg=black
     hi  Visual            guifg=black      guibg=lightgray
@@ -39,10 +36,8 @@ if has("gui_running")
     hi  DiffChange        guibg=#00005f
     hi  DiffText          guibg=#af5f00
 
-    hi  SpellBad          guibg=#5f0000    guifg=white
-    hi  SpellCap          guibg=#000080    guifg=white
-
     hi  ColorColumn       guibg=#1c1c1c
+    hi  Conceal           guifg=#606060   guibg=black
 
 elseif &term == "xterm-256color"
 
@@ -77,6 +72,9 @@ elseif &term == "xterm-256color"
     hi  SpellCap          ctermbg=darkblue   ctermfg=white
 
     hi  ColorColumn       ctermbg=234
+    hi  Conceal           ctermfg=darkgray   ctermbg=black
+
+    hi link SpellBad Error
 
 else
 
@@ -109,5 +107,8 @@ else
     hi  SpellCap          ctermbg=darkblue      ctermfg=white
 
     hi  ColorColumn       ctermbg=darkgray      ctermfg=white
+    hi  Conceal           ctermfg=darkgray      ctermbg=black
+
+    hi link SpellBad Error
 
 endif
