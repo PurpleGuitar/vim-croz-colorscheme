@@ -39,6 +39,8 @@ if has("gui_running")
     hi  ColorColumn       guibg=#1c1c1c
     hi  Conceal           guifg=#808080   guibg=black
 
+    hi  VertSplit         guifg=black      guibg=darkgray
+
 elseif &term == "xterm-256color"
 
     " Colors from: http://vim.wikia.com/wiki/Xterm256_color_names_for_console_Vim
@@ -74,6 +76,8 @@ elseif &term == "xterm-256color"
     hi  ColorColumn       ctermbg=234
     hi  Conceal           ctermfg=darkgray   ctermbg=black
 
+    hi  VertSplit         ctermfg=black      ctermbg=darkgray
+
     hi link SpellBad Error
 
 else
@@ -108,6 +112,8 @@ else
 
     hi  ColorColumn       ctermbg=darkgray      ctermfg=white
     hi  Conceal           ctermfg=darkgray      ctermbg=black
+
+    hi  VertSplit         ctermfg=black      ctermbg=darkgray
 
     hi link SpellBad Error
 
