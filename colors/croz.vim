@@ -12,34 +12,36 @@ if has("gui_running")
 
     " Colors from: http://vim.wikia.com/wiki/Xterm256_color_names_for_console_Vim
 
-    hi  Normal            guifg=#dadada  guibg=black
-    hi  Comment           guifg=#606060
-    hi  String            guifg=#ff8787
-    hi  PreProc           guifg=#ff87ff
-    hi  Statement         guifg=#00afff
-    hi  Identifier        guifg=#5fffff
-    hi  Constant          guifg=#5fff87
-    hi  Special           guifg=#ff8700
-    hi  Type              guifg=yellow
-    hi  Title             guifg=green      gui=BOLD
+    hi Normal           guifg=#dadada   guibg=black
+    hi Comment          guifg=#606060
+    hi String           guifg=#ff8787
+    hi PreProc          guifg=#ff87ff
+    hi Statement        guifg=#00afff
+    hi Identifier       guifg=#5fffff
+    hi Constant         guifg=#5fff87
+    hi Special          guifg=#ff8700
+    hi Type             guifg=yellow
+    hi Title            guifg=green     gui=BOLD
 
-    hi  Todo              guifg=white      guibg=#af5f00
-    hi  Folded            guifg=#606060    guibg=black
-    hi  Visual            guifg=black      guibg=lightgray
-    hi  Search            guifg=black      guibg=yellow
+    hi Todo             guifg=white     guibg=#af5f00
+    hi Folded           guifg=#606060   guibg=black
+    hi Visual           guifg=black     guibg=lightgray
+    hi Search           guifg=black     guibg=yellow
 
-    hi  JavaCommentTitle  guifg=darkgreen
-    hi  JavaDocTags       guifg=darkgreen  gui=BOLD
+    hi JavaCommentTitle guifg=darkgreen
+    hi JavaDocTags      guifg=darkgreen gui=BOLD
 
-    hi  DiffAdd           guibg=#005f00
-    hi  DiffDelete        guibg=#5f0000
-    hi  DiffChange        guibg=#00005f
-    hi  DiffText          guibg=#af5f00
+    hi DiffAdd          guibg=#005f00
+    hi DiffDelete       guibg=#5f0000
+    hi DiffChange       guibg=#00005f
+    hi DiffText         guibg=#af5f00
 
-    hi  ColorColumn       guibg=#1c1c1c
-    hi  Conceal           guifg=#808080   guibg=black
+    hi ColorColumn      guibg=#1c1c1c
+    hi Conceal          guifg=#808080   guibg=black
 
-    hi  VertSplit         guifg=black      guibg=darkgray
+    hi VertSplit        guifg=black     guibg=darkgray
+    hi StatusLine       guifg=black     guibg=darkgray
+    hi StatusLineNC     guifg=black     guibg=darkgray
 
 elseif &term == "xterm-256color"
 
