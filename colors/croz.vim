@@ -43,6 +43,9 @@ if has("gui_running")
     hi StatusLine       guifg=black     guibg=darkgray
     hi StatusLineNC     guifg=black     guibg=darkgray
 
+    hi CursorLine       guibg=#303030
+    hi CursorColumn     guibg=#303030
+
 elseif &term == "xterm-256color"
 
     " Colors from: http://vim.wikia.com/wiki/Xterm256_color_names_for_console_Vim
