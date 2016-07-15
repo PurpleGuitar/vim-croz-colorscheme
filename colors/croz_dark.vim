@@ -83,10 +83,10 @@ elseif &term == "xterm-256color"
     hi StatusLine         ctermfg=black      ctermbg=darkgray
     hi StatusLineNC       ctermfg=black      ctermbg=darkgray
 
-    hi CursorLine         ctermbg=darkgray
-    hi CursorColumn       ctermbg=darkgray
+    hi CursorLine         ctermbg=236        cterm=NONE
+    hi CursorColumn       ctermbg=236
 
-    hi LineNr             ctermbg=darkgray
+    hi LineNr             ctermfg=darkgray
 
     hi  Underlined        ctermfg=33
 
@@ -130,7 +130,7 @@ else
     hi CursorLine         ctermbg=darkgray
     hi CursorColumn       ctermbg=darkgray
 
-    hi LineNr             ctermbg=darkgray
+    hi LineNr             ctermfg=darkgray
 
     hi  Underlined        ctermfg=blue
 
