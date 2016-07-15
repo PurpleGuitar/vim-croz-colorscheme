@@ -1,10 +1,10 @@
 hi clear
 
 if exists("syntax_on")
-  syntax reset
+    syntax reset
 endif
 
-let colors_name = "croz"
+let g:colors_name = "croz_dark"
 
 set background=dark
 
@@ -46,6 +46,8 @@ if has("gui_running")
     hi CursorLine       guibg=#303030
     hi CursorColumn     guibg=#303030
 
+    hi LineNr           guifg=#505050
+
 elseif &term == "xterm-256color"
 
     " Colors from: http://vim.wikia.com/wiki/Xterm256_color_names_for_console_Vim
@@ -61,7 +63,6 @@ elseif &term == "xterm-256color"
     hi  Type              ctermfg=yellow
     hi  Title             ctermfg=green      cterm=BOLD
 
-    hi  Underlined        ctermfg=33
     hi  Todo              ctermfg=white      ctermbg=130
     hi  Folded            ctermfg=darkgray   ctermbg=black
     hi  Visual            ctermfg=black      ctermbg=lightgray
@@ -75,14 +76,22 @@ elseif &term == "xterm-256color"
     hi  DiffChange        ctermbg=17
     hi  DiffText          ctermbg=130
 
-    hi  SpellBad          ctermbg=52         ctermfg=white
-    hi  SpellCap          ctermbg=darkblue   ctermfg=white
-
     hi  ColorColumn       ctermbg=234
     hi  Conceal           ctermfg=darkgray   ctermbg=black
 
     hi  VertSplit         ctermfg=black      ctermbg=darkgray
+    hi StatusLine         ctermfg=black      ctermbg=darkgray
+    hi StatusLineNC       ctermfg=black      ctermbg=darkgray
 
+    hi CursorLine         ctermbg=darkgray
+    hi CursorColumn       ctermbg=darkgray
+
+    hi LineNr             ctermbg=darkgray
+
+    hi  Underlined        ctermfg=33
+
+    hi  SpellBad          ctermbg=52         ctermfg=white
+    hi  SpellCap          ctermbg=darkblue   ctermfg=white
     hi link SpellBad Error
 
 else
@@ -98,7 +107,6 @@ else
     hi  Type              ctermfg=yellow
     hi  Title             ctermfg=green         cterm=BOLD
 
-    hi  Underlined        ctermfg=blue
     hi  Todo              ctermfg=white         ctermbg=brown
     hi  Folded            ctermfg=darkgray      ctermbg=black
     hi  Visual            ctermfg=black         ctermbg=lightgray
@@ -112,14 +120,23 @@ else
     hi  DiffChange        ctermbg=darkblue      ctermfg=white
     hi  DiffText          ctermbg=darkyellow    ctermfg=white
 
-    hi  SpellBad          ctermbg=darkred       ctermfg=white
-    hi  SpellCap          ctermbg=darkblue      ctermfg=white
-
     hi  ColorColumn       ctermbg=darkgray      ctermfg=white
     hi  Conceal           ctermfg=darkgray      ctermbg=black
 
     hi  VertSplit         ctermfg=black      ctermbg=darkgray
+    hi StatusLine         ctermfg=black      ctermbg=darkgray
+    hi StatusLineNC       ctermfg=black      ctermbg=darkgray
 
+    hi CursorLine         ctermbg=darkgray
+    hi CursorColumn       ctermbg=darkgray
+
+    hi LineNr             ctermbg=darkgray
+
+    hi  Underlined        ctermfg=blue
+
+    hi  SpellBad          ctermbg=darkred       ctermfg=white
+    hi  SpellCap          ctermbg=darkblue      ctermfg=white
     hi link SpellBad Error
+
 
 endif
