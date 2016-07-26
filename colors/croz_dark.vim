@@ -138,5 +138,6 @@ else
     hi  SpellCap          ctermbg=darkblue      ctermfg=white
     hi link SpellBad Error
 
-
 endif
+
+hi! link Directory Identifier

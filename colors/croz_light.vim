@@ -17,7 +17,7 @@ if has("gui_running")
     hi String           guifg=#DD3333
     hi PreProc          guifg=#DD33DD
     hi Statement        guifg=#0033DD
-    hi Identifier       guifg=#00AAAA
+    hi Identifier       guifg=#00BBBB
     hi Constant         guifg=#00AA33
     hi Special          guifg=#FF9900
     hi Type             guifg=#999900
@@ -48,6 +48,7 @@ if has("gui_running")
 
     hi LineNr           guifg=#AAAAAA
 
+
 elseif &term == "xterm-256color"
 
     " TODO
@@ -56,5 +57,6 @@ else
 
     " TODO
 
-
 endif
+
+hi! link Directory Identifier
