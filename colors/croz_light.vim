@@ -16,7 +16,7 @@ if has("gui_running")
     hi Comment          guifg=#909090
     hi String           guifg=#DD3333
     hi PreProc          guifg=#DD33DD
-    hi Statement        guifg=#0033DD
+    hi Statement        guifg=#0033DD gui=NONE
     hi Identifier       guifg=#00BBBB
     hi Constant         guifg=#00AA33
     hi Special          guifg=#FF9900
