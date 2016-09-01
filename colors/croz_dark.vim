@@ -48,7 +48,7 @@ if has("gui_running")
 
     hi LineNr           guifg=#505050
 
-elseif &term == "xterm-256color"
+elseif &term == "xterm-256color" || &term == "screen-256color"
 
     " Colors from: http://vim.wikia.com/wiki/Xterm256_color_names_for_console_Vim
 
