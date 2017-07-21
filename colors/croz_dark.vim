@@ -52,21 +52,21 @@ elseif &term == "xterm-256color" || &term == "screen-256color"
 
     " Colors from: http://vim.wikia.com/wiki/Xterm256_color_names_for_console_Vim
 
-    hi  Normal            ctermfg=lightgray  ctermbg=black
-    hi  Comment           ctermfg=darkgray
+    hi  Normal            ctermfg=253  ctermbg=black
+    hi  Comment           ctermfg=241
     hi  String            ctermfg=210
     hi  PreProc           ctermfg=213
     hi  Statement         ctermfg=39
     hi  Identifier        ctermfg=87
     hi  Constant          ctermfg=84
     hi  Special           ctermfg=208
-    hi  Type              ctermfg=yellow
-    hi  Title             ctermfg=green      cterm=BOLD
+    hi  Type              ctermfg=226
+    hi  Title             ctermfg=46      cterm=BOLD
 
-    hi  Todo              ctermfg=white      ctermbg=130
-    hi  Folded            ctermfg=darkgray   ctermbg=black
+    hi  Todo              ctermfg=15      ctermbg=130
+    hi  Folded            ctermfg=241   ctermbg=black
     hi  Visual            ctermfg=black      ctermbg=lightgray
-    hi  Search            ctermfg=black      ctermbg=yellow
+    hi  Search            ctermfg=black      ctermbg=226
 
     hi  JavaCommentTitle  ctermfg=darkgreen
     hi  JavaDocTags       ctermfg=darkgreen  cterm=BOLD
