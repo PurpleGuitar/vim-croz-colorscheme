@@ -61,7 +61,7 @@ elseif &term == "xterm-256color" || &term == "screen-256color"
     hi  Constant          ctermfg=84
     hi  Special           ctermfg=208
     hi  Type              ctermfg=226
-    hi  Title             ctermfg=46      cterm=BOLD
+    hi  Title             ctermfg=46
 
     hi  Todo              ctermfg=15      ctermbg=130
     hi  Folded            ctermfg=241   ctermbg=black
