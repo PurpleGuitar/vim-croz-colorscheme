@@ -39,9 +39,9 @@ if has("gui_running")
     hi ColorColumn      guibg=#1c1c1c
     hi Conceal          guifg=#808080   guibg=black
 
-    hi VertSplit        guifg=black     guibg=darkgray
-    hi StatusLine       guifg=lightgray  guibg=black    gui=NONE
-    hi StatusLineNC     guifg=darkgray   guibg=black    gui=NONE
+    hi VertSplit        guifg=#606060   guibg=black gui=NONE
+    hi StatusLine       guifg=lightgray guibg=black gui=NONE
+    hi StatusLineNC     guifg=#606060   guibg=black gui=NONE
 
     hi CursorLine       guibg=#303030
     hi CursorColumn     guibg=#303030
@@ -79,9 +79,9 @@ elseif &term == "xterm-256color" || &term == "screen-256color"
     hi  ColorColumn       ctermbg=234
     hi  Conceal           ctermfg=darkgray   ctermbg=black
 
-    hi  VertSplit         ctermfg=black      ctermbg=darkgray
-    hi StatusLine         ctermfg=lightgray  ctermbg=black    cterm=NONE
-    hi StatusLineNC       ctermfg=gray       ctermbg=black    cterm=NONE
+    hi  VertSplit         ctermfg=241        ctermbg=black    cterm=NONE
+    hi StatusLine         ctermfg=253        ctermbg=black    cterm=NONE
+    hi StatusLineNC       ctermfg=241        ctermbg=black    cterm=NONE
 
     hi CursorLine         ctermbg=236        cterm=NONE
     hi CursorColumn       ctermbg=236
@@ -123,9 +123,9 @@ else
     hi  ColorColumn       ctermbg=darkgray      ctermfg=white
     hi  Conceal           ctermfg=darkgray      ctermbg=black
 
-    hi  VertSplit         ctermfg=black      ctermbg=darkgray
-    hi StatusLine         ctermfg=lightgray  ctermbg=black    cterm=NONE
-    hi StatusLineNC       ctermfg=gray       ctermbg=black    cterm=NONE
+    hi  VertSplit         ctermfg=darkgray      ctermbg=black cterm=NONE
+    hi StatusLine         ctermfg=lightgray     ctermbg=black cterm=NONE
+    hi StatusLineNC       ctermfg=darkgray      ctermbg=black cterm=NONE
 
     hi CursorLine         ctermbg=darkgray
     hi CursorColumn       ctermbg=darkgray
