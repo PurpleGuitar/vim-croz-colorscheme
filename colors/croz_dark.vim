@@ -42,6 +42,8 @@ if has("gui_running")
     hi VertSplit        guifg=#606060   guibg=black   gui=NONE
     hi StatusLine       guifg=#dadada   guibg=#262626 gui=NONE
     hi StatusLineNC     guifg=#606060   guibg=#121212 gui=NONE
+    hi StatusLineWarn   guifg=#ffff00   guibg=#262626 gui=NONE
+    hi StatusLineErr    guifg=#ff0000   guibg=#262626 gui=NONE
 
     hi CursorLine       guibg=#303030
     hi CursorColumn     guibg=#303030
@@ -82,6 +84,8 @@ elseif &term == "xterm-256color" || &term == "screen-256color"
     hi  VertSplit         ctermfg=241        ctermbg=black  cterm=NONE
     hi StatusLine         ctermfg=253        ctermbg=235    cterm=NONE
     hi StatusLineNC       ctermfg=241        ctermbg=233    cterm=NONE
+    hi StatusLineWarn     ctermfg=yellow     ctermbg=235    cterm=NONE
+    hi StatusLineErr      ctermfg=red        ctermbg=235    cterm=NONE
 
     hi CursorLine         ctermbg=236        cterm=NONE
     hi CursorColumn       ctermbg=236
@@ -126,6 +130,8 @@ else
     hi  VertSplit         ctermfg=darkgray      ctermbg=black    cterm=NONE
     hi StatusLine         ctermfg=lightgray     ctermbg=darkgray cterm=NONE
     hi StatusLineNC       ctermfg=darkgray      ctermbg=black    cterm=NONE
+    hi StatusLineWarn     ctermfg=yellow        ctermbg=darkgray cterm=NONE
+    hi StatusLineErr      ctermfg=red           ctermbg=darkgray cterm=NONE
 
     hi CursorLine         ctermbg=darkgray
     hi CursorColumn       ctermbg=darkgray
