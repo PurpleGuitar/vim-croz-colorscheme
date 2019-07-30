@@ -51,101 +51,113 @@ if has("gui_running")
 
     hi LineNr           guifg=#505050
 
+    hi TabLineFill      guifg=darkgray  guibg=black   gui=NONE
+    hi TabLine          guifg=darkgray  guibg=black   gui=NONE
+    hi TabLineSel       guifg=lightgray guibg=black   gui=NONE
+
 elseif &term == "xterm-256color" || &term == "screen-256color"
 
     " Colors from: http://vim.wikia.com/wiki/Xterm256_color_names_for_console_Vim
 
-    hi  Normal            ctermfg=253  ctermbg=black
-    hi  Comment           ctermfg=241
-    hi  String            ctermfg=210
-    hi  PreProc           ctermfg=213
-    hi  Statement         ctermfg=39
-    hi  Identifier        ctermfg=87
-    hi  Constant          ctermfg=84
-    hi  Special           ctermfg=208
-    hi  SpecialKey        ctermfg=19
-    hi  Type              ctermfg=226
-    hi  Title             ctermfg=46
+    hi Normal           ctermfg=253       ctermbg=black
+    hi Comment          ctermfg=241
+    hi String           ctermfg=210
+    hi PreProc          ctermfg=213
+    hi Statement        ctermfg=39
+    hi Identifier       ctermfg=87
+    hi Constant         ctermfg=84
+    hi Special          ctermfg=208
+    hi SpecialKey       ctermfg=19
+    hi Type             ctermfg=226
+    hi Title            ctermfg=46
 
-    hi  Todo              ctermfg=15      ctermbg=130
-    hi  Folded            ctermfg=241   ctermbg=black
-    hi  Visual            ctermfg=black      ctermbg=lightgray
-    hi  Search            ctermfg=black      ctermbg=226
+    hi Todo             ctermfg=15        ctermbg=130
+    hi Folded           ctermfg=241       ctermbg=black
+    hi Visual           ctermfg=black     ctermbg=lightgray
+    hi Search           ctermfg=black     ctermbg=226
 
-    hi  JavaCommentTitle  ctermfg=darkgreen
-    hi  JavaDocTags       ctermfg=darkgreen  cterm=BOLD
+    hi JavaCommentTitle ctermfg=darkgreen
+    hi JavaDocTags      ctermfg=darkgreen cterm=BOLD
 
-    hi  DiffAdd           ctermbg=22
-    hi  DiffDelete        ctermbg=52
-    hi  DiffChange        ctermbg=17
-    hi  DiffText          ctermbg=130
+    hi DiffAdd          ctermbg=22
+    hi DiffDelete       ctermbg=52
+    hi DiffChange       ctermbg=17
+    hi DiffText         ctermbg=130
 
-    hi  ColorColumn       ctermbg=234
-    hi  Conceal           ctermfg=darkgray   ctermbg=black
+    hi ColorColumn      ctermbg=234
+    hi Conceal          ctermfg=darkgray  ctermbg=black
 
-    hi  VertSplit         ctermfg=241        ctermbg=black  cterm=NONE
-    hi StatusLine         ctermfg=253        ctermbg=235    cterm=NONE
-    hi StatusLineNC       ctermfg=241        ctermbg=233    cterm=NONE
-    hi StatusLineWarn     ctermfg=yellow     ctermbg=235    cterm=NONE
-    hi StatusLineErr      ctermfg=red        ctermbg=235    cterm=NONE
+    hi VertSplit        ctermfg=241       ctermbg=black cterm=NONE
+    hi StatusLine       ctermfg=253       ctermbg=235   cterm=NONE
+    hi StatusLineNC     ctermfg=241       ctermbg=233   cterm=NONE
+    hi StatusLineWarn   ctermfg=yellow    ctermbg=235   cterm=NONE
+    hi StatusLineErr    ctermfg=red       ctermbg=235   cterm=NONE
 
-    hi CursorLine         ctermbg=236        cterm=NONE
-    hi CursorColumn       ctermbg=236
+    hi CursorLine       ctermbg=236       cterm=NONE
+    hi CursorColumn     ctermbg=236
 
-    hi LineNr             ctermfg=darkgray
+    hi LineNr           ctermfg=darkgray
 
-    hi  Underlined        ctermfg=33
+    hi TabLineFill      ctermfg=darkgray  ctermbg=black cterm=NONE
+    hi TabLine          ctermfg=darkgray  ctermbg=black cterm=NONE
+    hi TabLineSel       ctermfg=lightgray ctermbg=black cterm=NONE
 
-    hi  SpellBad          ctermbg=52         ctermfg=white
-    hi  SpellCap          ctermbg=darkblue   ctermfg=white
-    hi link SpellBad Error
+    hi Underlined       ctermfg=33
+
+    hi SpellBad         ctermbg=52        ctermfg=white
+    hi SpellCap         ctermbg=darkblue  ctermfg=white
+    hi link             SpellBad          Error
 
 else
 
-    hi  Normal            ctermfg=lightgray     ctermbg=black
-    hi  Comment           ctermfg=darkgray
-    hi  String            ctermfg=lightred
-    hi  PreProc           ctermfg=lightmagenta
-    hi  Statement         ctermfg=blue
-    hi  Identifier        ctermfg=lightcyan
-    hi  Constant          ctermfg=lightgreen
-    hi  Special           ctermfg=brown
-    hi  SpecialKey        ctermfg=blue
-    hi  Type              ctermfg=yellow
-    hi  Title             ctermfg=green         cterm=BOLD
+    hi Normal           ctermfg=lightgray  ctermbg=black
+    hi Comment          ctermfg=darkgray
+    hi String           ctermfg=lightred
+    hi PreProc          ctermfg=lightmagenta
+    hi Statement        ctermfg=blue
+    hi Identifier       ctermfg=lightcyan
+    hi Constant         ctermfg=lightgreen
+    hi Special          ctermfg=brown
+    hi SpecialKey       ctermfg=blue
+    hi Type             ctermfg=yellow
+    hi Title            ctermfg=green      cterm=BOLD
 
-    hi  Todo              ctermfg=white         ctermbg=brown
-    hi  Folded            ctermfg=darkgray      ctermbg=black
-    hi  Visual            ctermfg=black         ctermbg=lightgray
-    hi  Search            ctermfg=black         ctermbg=yellow
+    hi Todo             ctermfg=white      ctermbg=brown
+    hi Folded           ctermfg=darkgray   ctermbg=black
+    hi Visual           ctermfg=black      ctermbg=lightgray
+    hi Search           ctermfg=black      ctermbg=yellow
 
-    hi  JavaCommentTitle  ctermfg=darkgreen
-    hi  JavaDocTags       ctermfg=darkgreen     cterm=BOLD
+    hi JavaCommentTitle ctermfg=darkgreen
+    hi JavaDocTags      ctermfg=darkgreen  cterm=BOLD
 
-    hi  DiffAdd           ctermbg=darkgreen     ctermfg=white
-    hi  DiffDelete        ctermbg=darkred       ctermfg=white
-    hi  DiffChange        ctermbg=darkblue      ctermfg=white
-    hi  DiffText          ctermbg=darkyellow    ctermfg=white
+    hi DiffAdd          ctermbg=darkgreen  ctermfg=white
+    hi DiffDelete       ctermbg=darkred    ctermfg=white
+    hi DiffChange       ctermbg=darkblue   ctermfg=white
+    hi DiffText         ctermbg=darkyellow ctermfg=white
 
-    hi  ColorColumn       ctermbg=darkgray      ctermfg=white
-    hi  Conceal           ctermfg=darkgray      ctermbg=black
+    hi ColorColumn      ctermbg=darkgray   ctermfg=white
+    hi Conceal          ctermfg=darkgray   ctermbg=black
 
-    hi  VertSplit         ctermfg=darkgray      ctermbg=black    cterm=NONE
-    hi StatusLine         ctermfg=lightgray     ctermbg=darkgray cterm=NONE
-    hi StatusLineNC       ctermfg=darkgray      ctermbg=black    cterm=NONE
-    hi StatusLineWarn     ctermfg=yellow        ctermbg=darkgray cterm=NONE
-    hi StatusLineErr      ctermfg=red           ctermbg=darkgray cterm=NONE
+    hi VertSplit        ctermfg=darkgray   ctermbg=black    cterm=NONE
+    hi StatusLine       ctermfg=lightgray  ctermbg=darkgray cterm=NONE
+    hi StatusLineNC     ctermfg=darkgray   ctermbg=black    cterm=NONE
+    hi StatusLineWarn   ctermfg=yellow     ctermbg=darkgray cterm=NONE
+    hi StatusLineErr    ctermfg=red        ctermbg=darkgray cterm=NONE
 
-    hi CursorLine         ctermbg=darkgray
-    hi CursorColumn       ctermbg=darkgray
+    hi CursorLine       ctermbg=darkgray
+    hi CursorColumn     ctermbg=darkgray
 
-    hi LineNr             ctermfg=darkgray
+    hi LineNr           ctermfg=darkgray
 
-    hi  Underlined        ctermfg=blue
+    hi TabLineFill      ctermfg=darkgray   ctermbg=black    cterm=NONE
+    hi TabLine          ctermfg=darkgray   ctermbg=black    cterm=NONE
+    hi TabLineSel       ctermfg=lightgray  ctermbg=black    cterm=NONE
 
-    hi  SpellBad          ctermbg=darkred       ctermfg=white
-    hi  SpellCap          ctermbg=darkblue      ctermfg=white
-    hi link SpellBad Error
+    hi Underlined       ctermfg=blue
+
+    hi SpellBad         ctermbg=darkred    ctermfg=white
+    hi SpellCap         ctermbg=darkblue   ctermfg=white
+    hi link             SpellBad           Error
 
 endif
 
