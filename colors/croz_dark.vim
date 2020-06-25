@@ -37,6 +37,10 @@ if has("gui_running")
     hi DiffChange       guibg=#00005f
     hi DiffText         guibg=#af5f00
 
+    hi GitGutterAdd     guifg=lightgreen
+    hi GitGutterChange  guifg=yellow
+    hi GitGutterDelete  guifg=lightred
+
     hi SignColumn       guibg=black
     hi ColorColumn      guibg=#1c1c1c
     hi Conceal          guifg=#808080   guibg=black
@@ -84,6 +88,10 @@ elseif &term == "xterm-256color" || &term == "screen-256color"
     hi DiffDelete       ctermbg=52
     hi DiffChange       ctermbg=17
     hi DiffText         ctermbg=130
+
+    hi GitGutterAdd     ctermfg=lightgreen
+    hi GitGutterChange  ctermfg=yellow
+    hi GitGutterDelete  ctermfg=lightred
 
     hi SignColumn       ctermbg=black
     hi ColorColumn      ctermbg=234
@@ -136,6 +144,10 @@ else
     hi DiffDelete       ctermbg=darkred    ctermfg=white
     hi DiffChange       ctermbg=darkblue   ctermfg=white
     hi DiffText         ctermbg=darkyellow ctermfg=white
+
+    hi GitGutterAdd     ctermfg=lightgreen
+    hi GitGutterChange  ctermfg=yellow
+    hi GitGutterDelete  ctermfg=lightred
 
     hi SignColumn       ctermbg=black
     hi ColorColumn      ctermbg=darkgray   ctermfg=white
