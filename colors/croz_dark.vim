@@ -20,7 +20,6 @@ if has("gui_running")
     hi Identifier       guifg=#5fffff
     hi Constant         guifg=#5fff87
     hi Special          guifg=#ff8700
-    hi SpecialKey       guifg=#0000af
     hi Type             guifg=yellow
     hi Title            guifg=green     gui=BOLD
 
@@ -72,7 +71,6 @@ elseif &term == "xterm-256color" || &term == "screen-256color"
     hi Identifier       ctermfg=87
     hi Constant         ctermfg=84
     hi Special          ctermfg=208
-    hi SpecialKey       ctermfg=19
     hi Type             ctermfg=226
     hi Title            ctermfg=46
 
@@ -116,7 +114,6 @@ elseif &term == "xterm-256color" || &term == "screen-256color"
 
     hi SpellBad         ctermbg=52        ctermfg=white
     hi SpellCap         ctermbg=darkblue  ctermfg=white
-    hi link             SpellBad          Error
 
 else
 
@@ -128,7 +125,6 @@ else
     hi Identifier       ctermfg=lightcyan
     hi Constant         ctermfg=lightgreen
     hi Special          ctermfg=brown
-    hi SpecialKey       ctermfg=blue
     hi Type             ctermfg=yellow
     hi Title            ctermfg=green      cterm=BOLD
 
@@ -172,8 +168,10 @@ else
 
     hi SpellBad         ctermbg=darkred    ctermfg=white
     hi SpellCap         ctermbg=darkblue   ctermfg=white
-    hi link             SpellBad           Error
 
 endif
 
-hi! link Directory Identifier
+hi! link Directory  Identifier
+hi! link SpellBad   Error
+hi! link NonText    Comment
+hi! link SpecialKey Comment
